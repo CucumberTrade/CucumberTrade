@@ -2,14 +2,14 @@ name: Deploy Docs to GitHub Pages
 
 on:
   push:
-    branches: [main]          # run on every push to main
+    branches: [main]
     paths:
-      - "docs-site/**"        # …but only if something in docs-site/ changed
+      - "docs-site/**"
 
 permissions:
   contents: read
-  pages: write                # allow publishing
-  id-token: write             # allow OIDC for Pages
+  pages: write
+  id-token: write
 
 concurrency:
   group: "pages"
@@ -20,7 +20,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: docs-site   # all commands run inside docs-site
+        working-directory: docs-site
     steps:
       - uses: actions/checkout@v4
 
@@ -28,14 +28,14 @@ jobs:
         with:
           node-version: 20
           cache: npm
-          # tell the action where the lock-file really is
           cache-dependency-path: docs-site/package-lock.json
+
       - run: npm ci
-      - run: npm run build             # outputs docs-site/build
+      - run: npm run build
 
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: build                  # path is relative to working-directory
+          path: docs-site/build
 
   deploy:
     needs: build
