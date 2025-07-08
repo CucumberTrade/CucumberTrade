@@ -28,7 +28,8 @@ jobs:
         with:
           node-version: 20
           cache: npm
-
+          # tell the action where the lock-file really is
+          cache-dependency-path: docs-site/package-lock.json
       - run: npm ci
       - run: npm run build             # outputs docs-site/build
 
