@@ -1,23 +1,62 @@
-/**
- * CSS files with the .module.css suffix will be treated as CSS modules
- * and scoped locally.
- */
+:global(.main-wrapper) {
+  flex: none !important;
+  min-height: auto !important;
+}
 
-.heroBanner {
-  padding: 4rem 0;
-  text-align: center;
+:global(.footer) {
+  flex: 1 0 auto !important;
+  display: flex !important;
+  flex-direction: column;       /* stack children vertically */
+  justify-content: center;      /* center them top↔bottom */
+  align-items: center;          /* center them left↔right */
+  padding-top: 2rem;            /* adjust as desired */
+  padding-bottom: 2rem;
+  text-align: center;           /* ensure text is centered */
+}
+
+/* Hero section wrapper */
+.heroBackground {
+  width: 100vw;               /* full viewport width */
+  aspect-ratio: 1200 / 400;   /* match image aspect ratio */
+  background-image: url('/img/CucumberTrade_Wilson.svg');
+  background-size: 100% auto; /* image spans full width */
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
   position: relative;
   overflow: hidden;
 }
 
+/* Dark overlay on hero background */
+.heroBackground::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  pointer-events: none; /* allows interaction with elements below */
+}
+
+/* Content container inside hero */
+.heroContent {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 4rem 0;
+}
+
+/* Responsive padding adjustment */
 @media screen and (max-width: 996px) {
-  .heroBanner {
+  .heroContent {
     padding: 2rem;
   }
 }
 
+/* Button group alignment */
 .buttons {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 1rem;
 }
