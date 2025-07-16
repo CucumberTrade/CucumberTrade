@@ -1,6 +1,6 @@
 ---
-id: Socials
-title: "| Socials"
+id: Assistance
+title: "| Assistance"
 ---
 
 ### Official Twitter

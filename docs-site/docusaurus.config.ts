@@ -22,8 +22,8 @@ const config: Config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'Cucumber Trade', // Usually your GitHub org/user name.
-  projectName: 'Cucumber Documentation', // Usually your repo name.
+  organizationName: 'CucumberTrade', // Usually your GitHub org/user name.
+  projectName: 'CucumberTrade Documentation', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',

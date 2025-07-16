@@ -1,8 +1,6 @@
-/* ==========================================================================
-   Footer Overrides (global)
-   ========================================================================== */
+/* src/css/custom.css */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap');
 
-/* Make the footer a flex column and center its content */
 :global(.footer) {
   display: flex !important;
   flex-direction: column !important;
@@ -28,4 +26,7 @@
   --ifm-footer-link-color: #FFFFFF;
   --ifm-footer-link-hover-color: #00acc1;
   --ifm-footer-title-color: #FFFFFF;
+  --ifm-font-family-base: 'Rubik', sans-serif;
+  --ifm-font-family-code: 'Fira Code', monospace;
 }
+

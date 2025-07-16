@@ -4,28 +4,27 @@
 }
 
 :global(.footer) {
-  flex: 1 0 auto !important;
+  flex: 0 0 auto !important;     /* don’t force it to grow */
   display: flex !important;
-  flex-direction: column;       /* stack children vertically */
-  justify-content: center;      /* center them top↔bottom */
-  align-items: center;          /* center them left↔right */
-  padding-top: 2rem;            /* adjust as desired */
-  padding-bottom: 2rem;
-  text-align: center;           /* ensure text is centered */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 4rem !important;  /* halve the vertical padding */
+  text-align: center;
 }
 
 /* Hero section wrapper */
 .heroBackground {
-  width: 100vw;               /* full viewport width */
-  aspect-ratio: 1200 / 400;   /* match image aspect ratio */
+  width: 100%;
+  /* Use a minimum height instead of fixed aspect-ratio so content can flow */
+  min-height: 40vh;
   background-image: url('/img/CucumberTrade_Wilson.svg');
-  background-size: 100% auto; /* image spans full width */
+  background-size: cover;       /* cover full area, maintain aspect */
   background-position: center;
-  background-repeat: no-repeat;
-  margin: 0;
-  padding: 0;
   position: relative;
   overflow: hidden;
+  padding: 0;
+  margin: 0;
 }
 
 /* Dark overlay on hero background */
@@ -35,7 +34,7 @@
   inset: 0;
   background-color: rgba(0, 0, 0, 0.2);
   z-index: 1;
-  pointer-events: none; /* allows interaction with elements below */
+  pointer-events: none;
 }
 
 /* Content container inside hero */
@@ -43,20 +42,42 @@
   position: relative;
   z-index: 2;
   text-align: center;
-  padding: 4rem 0;
+  padding: 6rem 1rem;
 }
 
-/* Responsive padding adjustment */
-@media screen and (max-width: 996px) {
-  .heroContent {
-    padding: 2rem;
-  }
+/* Fluid typography */
+.heroContent h1 {
+  font-size: clamp(2rem, 6vw, 4rem);
+  line-height: 1.2;
+  margin-bottom: 1rem;
 }
 
-/* Button group alignment */
+.heroContent p {
+  font-size: clamp(1rem, 3vw, 1.5rem);
+  margin-bottom: 2rem;
+}
+
+/* Button group alignment with wrapping */
 .buttons {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 1rem;
+}
+
+/* Button sizing */
+.button--lg {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+}
+
+/* Mobile adjustments */
+@media screen and (max-width: 768px) {
+  .heroContent {
+    padding: 4rem 1rem;
+  }
+  .button--lg {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
 }

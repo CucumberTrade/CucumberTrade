@@ -1,9 +1,16 @@
----
-sidebar_position: 1
----
+# 🏡 <span style={{ color: '#93FF11'}}>| Home</span>
 
-# 🏡 | Home
+# Welcome to Cucumber<span style={{ color: '#93FF11'}}>Trade</span>: Revolutionizing AI-Driven Trading and Investment Management
 
-# Welcome to CucumberTrade: Revolutionizing AI-Driven Trading and Investment Management
+Cucumber<span style={{ color: '#93FF11'}}>Trade</span> is your personal AI-powered trading coach, built to turn raw on-chain activity into crystal-clear feedback. Connect your wallet in seconds and let our intelligent agent analyze every move—spotting patterns, highlighting risk, and celebrating wins. Whether you’re looking to understand past mistakes, uncover new opportunities, or hone your timing, Cucumber Trade delivers data-driven insights and tailored guidance so you can trade smarter, not harder. Dive in, learn from your behavior, and watch your performance evolve—one trade at a time.
 
- Cucumber Trades empowers every investor—novice or professional—with cutting-edge artificial intelligence, intuitive interfaces, and community-centric governance. Built on a foundation of transparency, security, and inclusivity, our platform automates insights, democratizes access to sophisticated strategies, and ensures that the voice of each participant shapes our evolution.
+## <span style={{ color: '#93FF11'}}>Our Mission</span>
+
+To democratize advanced trading and portfolio management by harnessing AI and community wisdom—making capital markets more efficient, fair, and accessible to all.
+
+:::tip[Join the Future of Trading]
+At CucumberTrade, we believe in empowering individuals through smart signals and collective action. Whether you're here to harness our AI-Agent signals, participate in DeFi, Staking and more, your journey starts now.
+
+'Trade Smarter. Trade Together. Grow Together' - PickleRick
+
+:::

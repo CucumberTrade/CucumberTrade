@@ -35,8 +35,8 @@ export default function Home(): ReactNode {
   const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />"
+      title={`Welcome to ${siteConfig.title}`}
+      description="Connect. Analyze. Improve. — your AI trading agent for deeper insight and smarter decisions."
     >
       <HomepageHeader />
     </Layout>
