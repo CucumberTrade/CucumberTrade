@@ -6,7 +6,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'CucumberTrade',
-  tagline: 'Connect. Analyze. Improve. — your AI trading agent for deeper insight and smarter decisions.',
+  tagline: 'Revolutionizing AI-Driven Trading',
   favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future

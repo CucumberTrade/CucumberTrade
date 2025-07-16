@@ -15,14 +15,9 @@ function HomepageHeader(): ReactElement {
         <Heading as="h1" className="hero__title margin-bottom--lg">
           {siteConfig.title}
         </Heading>
-        <p className="hero__subtitle">
-          {siteConfig.tagline}
-        </p>
+        <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div className={clsx(styles.buttons, 'margin-top--xl')}>
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/Home"
-          >
+          <Link className="button button--secondary button--lg" to="/docs/Home">
             Enter Documentation
           </Link>
         </div>
@@ -31,13 +26,22 @@ function HomepageHeader(): ReactElement {
   );
 }
 
-export default function Home(): ReactNode {
-  const { siteConfig } = useDocusaurusContext();
+// This runs at build‐time to inject into the SSR head.
+export function Head() {
+  const title = 'Welcome to CucumberTrade';
+  const description =
+    'CucumberTrade is the leading AI-powered trading platform—learn more in our docs.';
   return (
-    <Layout
-      title={`Welcome to${siteConfig.title}`}
-      description="Connect. Analyze. Improve. — your AI trading agent for deeper insight and smarter decisions."
-    >
+    <>
+      <title>{title}</title>
+      <meta name="description" content={description} />
+    </>
+  );
+}
+
+export default function Home(): ReactNode {
+  return (
+    <Layout>
       <HomepageHeader />
     </Layout>
   );
