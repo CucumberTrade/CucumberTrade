@@ -13,18 +13,21 @@
   text-align: center;
 }
 
-/* Hero section wrapper */
 .heroBackground {
-  width: 100%;
-  /* Use a minimum height instead of fixed aspect-ratio so content can flow */
-  min-height: 40vh;
-  background-image: url('/img/CucumberTrade_Wilson.svg');
-  background-size: cover;       /* cover full area, maintain aspect */
-  background-position: center;
   position: relative;
-  overflow: hidden;
-  padding: 0;
-  margin: 0;
+  background-image: url('/img/CucumberTrade_Wilson.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white; /* Text color over the background image */
+  padding: 0px;
+  overflow: hidden; /* Ensures no overflow beyond the container */
 }
 
 /* Dark overlay on hero background */

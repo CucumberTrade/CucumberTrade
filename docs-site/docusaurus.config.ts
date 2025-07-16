@@ -5,7 +5,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'Cucumber Trade',
+  title: 'CucumberTrade',
   tagline: 'Connect. Analyze. Improve. — your AI trading agent for deeper insight and smarter decisions.',
   favicon: 'img/favicon.ico',
 
@@ -73,9 +73,9 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'Cucumber Trade',
+      title: 'CucumberTrade',
       logo: {
-        alt: 'Cucumber Trade Logo',
+        alt: 'CucumberTrade Logo',
         src: 'img/CucumberTrade_Logo.png',
       },
       items: [

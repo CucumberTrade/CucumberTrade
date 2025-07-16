@@ -35,7 +35,7 @@ export default function Home(): ReactNode {
   const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
-      title={`Welcome to ${siteConfig.title}`}
+      title={`Welcome to${siteConfig.title}`}
       description="Connect. Analyze. Improve. — your AI trading agent for deeper insight and smarter decisions."
     >
       <HomepageHeader />

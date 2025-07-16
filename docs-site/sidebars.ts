@@ -37,9 +37,17 @@ const sidebars: SidebarsConfig = {
       label: '🪙 | TGE',            // sidebar label
     },
     {
-      type: 'doc',
-      id: 'Getting-Started/Getting-Started',         // doc id
-      label: '🚀 | Getting Started', // sidebar label
+      type: 'category',        // doc id
+      label: '🚀 | Ecosystem Overview', // sidebar label
+      link: {
+        type: 'doc',
+        id: 'Ecosystem-Overview/Ecosystem-Overview', // category index doc
+      },
+      items: [
+        'Ecosystem-Overview/Foundation',
+        'Ecosystem-Overview/Core-ST',
+        'Ecosystem-Overview/ExecInt',
+      ],
     },
   ],
 };
