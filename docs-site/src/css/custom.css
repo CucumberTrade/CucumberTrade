@@ -30,3 +30,14 @@
   --ifm-font-family-code: 'Fira Code', monospace;
 }
 
+/** src/css/custom.css **/
+
+/* Center all footer column contents */
+:global(.footer__links) .footer__col {
+  text-align: center;
+}
+
+/* (Optional) Ensure the link list itself is inline‐centered */
+:global(.footer__links) .footer__items {
+  display: inline-block;
+}

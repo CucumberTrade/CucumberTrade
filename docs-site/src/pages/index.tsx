@@ -26,22 +26,12 @@ function HomepageHeader(): ReactElement {
   );
 }
 
-// This runs at build‐time to inject into the SSR head.
-export function Head() {
-  const title = 'Welcome to CucumberTrade';
-  const description =
-    'CucumberTrade is the leading AI-powered trading platform—learn more in our docs.';
-  return (
-    <>
-      <title>{title}</title>
-      <meta name="description" content={description} />
-    </>
-  );
-}
-
 export default function Home(): ReactNode {
   return (
-    <Layout>
+    <Layout
+      title={''}
+      description="CucumberTrade is the leading AI-powered trading platform—learn more in our docs."
+    >
       <HomepageHeader />
     </Layout>
   );

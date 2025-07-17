@@ -1,7 +1,0 @@
----
-id: Socials
-title: "| Socials"
----
-
-### Official Twitter
-### Official Medium and Mirror

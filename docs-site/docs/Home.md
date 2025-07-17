@@ -1,3 +1,8 @@
+---
+id: Home
+title: "Home"
+---
+
 # 🏡 <span style={{ color: '#93FF11'}}>| Home</span>
 
 # Welcome to Cucumber<span style={{ color: '#93FF11'}}>Trade</span>: Revolutionizing AI-Driven Trading and Investment Management

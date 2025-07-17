@@ -15,14 +15,9 @@ const sidebars: SidebarsConfig = {
         id: 'Contact-Us/contact-us', 
       },
       items: [
-        'Contact-Us/Socials',
         'Contact-Us/Assistance',
+        'Contact-Us/Partnerships',
       ],
-    },
-    {
-      type: 'doc',
-      id: 'TGE',                   
-      label: '🪙 | TGE',          
     },
     {
       type: 'category', 
@@ -35,6 +30,18 @@ const sidebars: SidebarsConfig = {
         'Ecosystem-Overview/Foundation',
         'Ecosystem-Overview/Core-ST',
         'Ecosystem-Overview/ExecInt',
+      ],
+    },
+        {
+      type: 'category', 
+      label: '🪙 | Tokenomics Overview', 
+      link: {
+        type: 'doc',
+        id: 'Token-Economics/Tokenomics-Overview',
+      },
+      items: [
+        'Token-Economics/Ecosystem-Earnings',
+        'Token-Economics/Supply-Burning',
       ],
     },
   ],

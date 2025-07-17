@@ -7,7 +7,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: 'CucumberTrade',
   tagline: 'Revolutionizing AI-Driven Trading',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/Favicon.svg',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -101,7 +101,7 @@ const config: Config = {
           title: 'Community',
           items: [
             {
-              label: 'X',
+              label: 'Twitter',
               href: 'https://x.com/TradeOnCucumber',
             },
           ],
