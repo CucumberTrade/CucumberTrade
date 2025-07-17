@@ -11,4 +11,6 @@ Whether you’re a budding project gearing up for a successful launch on Arbitru
 
 We’re enthusiastic about forging new partnerships and embarking on collaborative journeys that drive mutual success. Don’t hesitate to get in touch—we’re here to help you thrive with CucumberTrade!  
 
+import CucumberTradeLogo from '/img/CucumberTrade_Logo2.svg';
 
+<CucumberTradeLogo width={300} alt="Cucumber Trades Logo"/>

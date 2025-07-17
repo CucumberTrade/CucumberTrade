@@ -32,18 +32,6 @@ const sidebars: SidebarsConfig = {
         'Ecosystem-Overview/ExecInt',
       ],
     },
-        {
-      type: 'category', 
-      label: '🪙 | Tokenomics Overview', 
-      link: {
-        type: 'doc',
-        id: 'Token-Economics/Tokenomics-Overview',
-      },
-      items: [
-        'Token-Economics/Ecosystem-Earnings',
-        'Token-Economics/Supply-Burning',
-      ],
-    },
   ],
 };
 
